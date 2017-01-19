@@ -1,0 +1,105 @@
+Preface
+This document contains the Software Requirement Specification (SRS) of a seat and book reserving system which is meant for the user (student at University of Portsmouth), to book seats with or without computers and will give designated seats depending on the entered information. This document it is also used to provide guidance which is intended as a background reading for the one who are involved in developing the reserving system.
+
+
+Introduction
+Users, often are unable to find seats or computers available at the University of Portsmouth Library. This may be the result impractical journey to and from the library, which can lead to adding stress to the student and frustration on the student. Therefore, the user in this case a student might be going to the library without knowing if they can do their work or not. The new software, will allow a them to book and available space or computer within a certain time slot, if the student doesn’t want to book a seat, but want to know the location of it, they can do so by the unique coordinate of the seat.
+
+A system which can be compared to our SBE System could be a cinema seating system. Cinemas seem to have a system which allows the member of staff to allocate customers an area to sit so that there is no confusion in the screening room, if there are 3 people going to watch a film then the member of staff will need to put into the system the information provided to find the customers suitable seats. This therefore allows roles to need less help or possible staff to operate successfully.
+Restaurants are another type of organisation which uses a similar system to organise and allocate customers an area to be seated. An employee would have a device which is regularly updated on the spot as seats are booked or as they are available again. This system would reduce the stress on the restaurant and employees when it comes to locating seats for customers quickly or letting them know that seats are taken and how long till they will be able to be seated.
+
+
+Method Used to Elicit Requirements:
+
+To make sure our product has the necessary requirements we interviewed potential users one on one to see what they would want it to be able to do and how they’d like it to perform. We hope to use these requirements to better target our potential users by including things that they are looking for.
+When we asked them in the one to one interviews, they said it should be:
+Easy to login/signup
+Simple and quick to use
+Easy to get the exact location of the seat
+Able to book multiple seats
+Able to stop reserved books being taken
+Able to choose which floor you want to sit on
+Able to choose whether you need a computer or not
+To be used anytime and anywhere with any device
+Receive confirmation email about the booking made
+Be able to cancel the booking made
+
+We then took these suggestions, created a more detailed list of requirements that would answer their needs and confirmed with them that we had addressed all the requirements they wanted. This will allow us to modify our software to suit the needs of the users and keep those needs in mind when updating the software too.
+
+
+User Requirements:
+
+User characteristics:
+The users will mostly be students, either undergraduate and postgraduate, will be  aged 18 and over,  with the exception of mature students, in addition some user have disabilities. They will all be educated and are expected to have a background knowledge and understanding of computer operations. The software will be made available for users of different type of ethnic background, the language used will be made simple, easy to read and understand for user whose english is not their first language
+
+Functional requirements:
+Each user will be able to log-in to the system using a unique log-in and password
+ Users will be given an overview of the libraries seating, showing the available and unavailable seats at that time and where they are located
+The user will be able to click a seat and see what times it is available for a particular day.
+The user will be able to set their preferences for things like what floor the seat is on and computer/non-computer so that when they make a search for a specific time seats available that match their preferred criteria will show first
+The user will also be able to see the different types of seating booth, computer, individual etc
+The user will be able to book a seat at a time that suits them for up to 6 hours, this will then reserve the seat for them and mark it as unavailable to other users at that time
+The user will also be able to make group bookings, if there are available seats for the number of people they have selected, this will allow one person to book seats for themselves and their friends/colleges.
+The system should give users a reminder of upcoming bookings and display them on a separate page
+The user should be able to access the system from a computer or a mobile device
+The system should be available 24/7 during term time as the library is used at all points in the day and so users may want or need to book seating at unusual times
+The system should be able to send a confirmation email to the user, that the booking have been made successfully 
+The user will be able to cancel any booking they make and can also arrange a booking for different time or day.
+
+Non-functional user requirements:
+The user interface will have a simple interface, with a map, menus, list boxes, combination boxes and buttons. As well as help dialog. This makes it easier for the user and the system as it will be easy to read and limit the amount of possible inputs from the user making error handling easier.
+The system must be fast, and regularly kept up to date to avoid people booking seats which are unavailable, should aim to update every few minutes.
+The system must be password protected to make sure that user's personal details and preferences cannot be seen by others.
+The system will not show which user has booked which seat to maintain each user's privacy.
+The system should be easy to maintain so that users can be added or removed when necessary (for example graduating students), and to accommodate changes in the libraries seating so that users aren’t using out of date information or maps.
+The system must be able to handle errors and return helpful and precise feedback so the user know what they did wrong, for example trying to book a seat that is unavailable the system will tell you that is unavailable and the time it will next be available. 
+
+
+System Requirements:
+
+Functional requirements:
+When a student loads up the system they will be prompted to log in where they will enter their student number and a password.
+The system will allow students to book a seat in the library in hourly slots.
+The system will allow the student to select the specific seat that they would like.
+The system will allow the student to choose how long they want to book the seat for.
+The system will allow the student to book a seat for up to 6 hours.
+When a student selects a seat the system will display a table, that has a list of available slots to book the seat.
+If the student tries to book the seat for more than 6 hours then the system will display a message telling the student that they are restricted to 6 hours at time.
+The system will only allow the student to book seats that are available and not taken.
+If the student tries to book a seat that is already booked at the time they would like to book it for the system will display a message letting the student know that the seat is not available at that time.
+Once the student has booked a seat, the system will assign the students number to the seat.
+The system will allow the student to see where the seat is on the library map.
+The system will require a database that will need to store all details of bookings such as time, student number, location and duration.
+The systems database will need to be efficient at adding information to the database so that there is no delay to a booking being added onto the system, allowing other students to see that the seat has now been booked.
+The systems database also needs to be efficient at querying existing data in the database so that when a student selects a seat the available time slots loads up quickly and students are not waiting a long time.
+The system will function in the same way on all of the different platforms, making it easier for students to use and find their way around the system.
+The system will allow all platforms will be linked to the same database, making sure that there is no possibility of double bookings.
+The system will require an sql server to run. This sql server will be where all data of the bookings and available time slots will be stored.
+
+Non-Functional requirements:
+The system should be available 24/7, even out of term time.
+The system should update the database every time a booking is made.
+The software will be released on different platforms, such as the computer and a mobile device. The computer version will be released by having a link to the download on the library website and the version for a mobile device will be released as an app on the play store and ios store.
+After the system has been released there will be updates released for the software to fix any bugs that may have been found or possible tweaks to the system. These updates will be released to all of the different platforms but in different ways. The mobile device will simply have an update for the app and the computer version will have a link to the update on the library website.
+
+Constraints: 
+The student is restricted to 6 hours per booking.
+Each seat will be restricted to only being booked out by one student at the same time to avoid clashes.
+Each student will be constrained to a certain amount of seats that they are able to book out. This will stop students from being able to book out a whole section, stopping other students from being able to book.
+There will be a limitation on how many missed booking.
+The student will be marked or flagged when reached a certain amount of  missed booking.
+Student can book either a seat or a computer, not both of them at the same time. 
+
+
+Glossary:
+SBE: Stands for “Seat? Book? Easy!”, the name of our product
+SRS: Software Requirement  Specification, a document that describe the behavior of     the software
+System: a set of principle and procedures working together to create something, which can be a scheme or a method.
+User(s): a person or a set of people who use a system 
+User Requirement: what the user expect the software to be able to do
+User Characteristic: details about the user characteristic such as age, gender, language, computer skills, physical abilities and disabilities, etc.
+Functional Requirement: specifies the behaviour or function of a system
+Non-functional Requirement: specifies the criteria that is used to judge the operation of a system
+Constraint: limitation or restriction of the system
+Elicit: drawing out an answer or fact from a user
+One to one interviews: Interviews between one team member and one potential user
