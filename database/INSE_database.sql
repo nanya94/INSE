@@ -1,3 +1,4 @@
+create database INSE;
 create table student (
   std_ID int(6) AUTO_INCREMENT  NOT NULL PRIMARY KEY,
   FirstName varchar (255) NOT NULL,
@@ -5,7 +6,6 @@ create table student (
   Email varchar (50) NOT NULL,
   Password varchar (8) NOT NULL
 );
-
 create table seats(
   sts_ID int(5) AUTO_INCREMENT NOT NULL PRIMARY KEY,
   total_sts int(5) NOT NULL,
@@ -14,7 +14,6 @@ create table seats(
   std_ID int(6) NOT NULL,
   FOREIGN KEY(std_ID) REFERENCES student(std_ID)
 );
-
 create table computers(
   cmpt_ID int(5) AUTO_INCREMENT NOT NULL PRIMARY KEY,
   total_cmpt int(5) NOT NULL,
@@ -23,7 +22,6 @@ create table computers(
   std_ID int(6) NOT NULL,
   FOREIGN KEY(std_ID) REFERENCES student(std_ID)
 );
-
 create table booking_info(
   bkng_ID int(6) AUTO_INCREMENT NOT NULL PRIMARY KEY,
   no_bkng int(5) AUTO_INCREMENT,
