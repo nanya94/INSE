@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_menu"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.library_app_test.Menu">
+
+    <Button
+        android:text="Logout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/button4"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:textStyle="bold"
+        android:onClick="logout"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/UserInfoOut"
+        android:layout_alignParentEnd="true"
+        android:contentDescription="User Information"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body2"
+        android:textAlignment="center"
+        android:textStyle="bold"/>
+
+    <Button
+        android:text="Stuff"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menuButton1"
+        android:layout_below="@+id/UserInfoOut"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="50dp"
+        />
+
+    <Button
+        android:text="Book a Seat"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menuButton2"
+        android:layout_below="@+id/menuButton1"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp"
+        android:onClick="changeScreen"/>
+
+
+    <Button
+        android:text="Something Else"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menuButton3"
+        android:layout_marginTop="30dp"
+        android:layout_below="@+id/menuButton2"
+        android:layout_alignParentStart="true"
+        />
+
+
+
+    <Button
+        android:text="View Bookings"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/menuButton4"
+        android:layout_below="@+id/menuButton3"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="30dp" />
+
+
+</RelativeLayout>
