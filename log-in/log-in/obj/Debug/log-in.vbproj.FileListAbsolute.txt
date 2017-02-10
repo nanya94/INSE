@@ -1,0 +1,11 @@
+C:\Users\Cleopatra\Desktop\Points\INSE\log-in\log-in\bin\Debug\log-in.exe.config
+C:\Users\Cleopatra\Desktop\Points\INSE\log-in\log-in\bin\Debug\log-in.exe
+C:\Users\Cleopatra\Desktop\Points\INSE\log-in\log-in\bin\Debug\log-in.pdb
+C:\Users\Cleopatra\Desktop\Points\INSE\log-in\log-in\bin\Debug\log-in.xml
+C:\Users\Cleopatra\Desktop\Points\INSE\log-in\log-in\obj\Debug\log-in.vbprojResolveAssemblyReference.cache
+C:\Users\Cleopatra\Desktop\Points\INSE\log-in\log-in\obj\Debug\log_in.Form1.resources
+C:\Users\Cleopatra\Desktop\Points\INSE\log-in\log-in\obj\Debug\log_in.Resources.resources
+C:\Users\Cleopatra\Desktop\Points\INSE\log-in\log-in\obj\Debug\log-in.vbproj.GenerateResource.Cache
+C:\Users\Cleopatra\Desktop\Points\INSE\log-in\log-in\obj\Debug\log-in.exe
+C:\Users\Cleopatra\Desktop\Points\INSE\log-in\log-in\obj\Debug\log-in.xml
+C:\Users\Cleopatra\Desktop\Points\INSE\log-in\log-in\obj\Debug\log-in.pdb
