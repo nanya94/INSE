@@ -5,8 +5,7 @@ body, html{
 
 img{
   display: block;
-  margin-left:auto;
-  margin-right: auto;
+  margin: 20px auto;
   width: 250px;
 }
 
@@ -234,6 +233,11 @@ li a:hover:not(.active) {
     background-color: #4CAF50;
     text-decoration: none;
 }
+/*--------Book Seat Form-----*/
+#book-seat{
+  text-align: center;
+}
+
 /*--------Footer-------------*/
 footer{
   margin-top: 20%;
