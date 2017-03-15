@@ -9,8 +9,10 @@ create table student(
 create table seat(
     seat_ID int(5) AUTO_INCREMENT PRIMARY KEY,
     Floor int(1)    NOT NULL,
-    isComp boolean  NOT NULL
-);
+    isComp boolean  NOT NULL,
+    locationX int(4),
+    locationY int(4)
+);  
 
 create table time_slot(
     slot_ref int(5) AUTO_INCREMENT PRIMARY KEY,
