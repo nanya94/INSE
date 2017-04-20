@@ -16,7 +16,7 @@
     </div>
   </header>
   <div class="form">
-    <form method="post" action="index.php">
+    <form method="post" action="index.html">
       <label for="uni-email"> Email </label>
       <input type="text" name="e-mail" id="email">
       <label for="password"> Password </label>

@@ -17,15 +17,9 @@
   </header>
   <nav>
     <ul>
-      <li><a href="index.php">Home</a></li>
-      <li class="dropdown">
-        <a href="javascript:void(0)" class="dropbtn">Make Booking</a>
-        <div class="dropdown-content">
-          <a href="bookseat.php">Book Seat</a>
-          <a href="bookseat.php">Book Group of Seats</a>
-        </div>
-      </li>
-      <li><a href="bookreserving.php">Reserved Book</a></li>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="bookseat.html" class="dropbtn">Book Seat</a></li>
+      <li><a href="bookreserving.html">Reserved Book</a></li>
       <li class="dropdown">
         <a href="javascript:void(0)" class="dropbtn">Maps</a>
         <div class="dropdown-content">

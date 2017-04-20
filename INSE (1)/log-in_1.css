@@ -1,6 +1,8 @@
 body, html{
   background-color:  #754db3;
   font-family: "Segoe UI", Frutiger, "Frutiger Linotype", "Dejavu Sans", "Helvetica Neue", Arial, sans-serif;
+  background: url(img/book.jpeg) no-repeat center fixed;
+   background-size: cover;
 }
 
 img{
@@ -233,6 +235,20 @@ li a:hover:not(.active) {
     background-color: #4CAF50;
     text-decoration: none;
 }
+
+/*-------- Book Page --------*/
+
+#bookpage{
+  margin-top: 5%;
+  font-size: 4em;
+  text-align: center;
+  font-style: bold;
+  margin-bottom: 0%;
+}
+#book{
+
+  text-align: center;
+}
 /*--------Book Seat Form-----*/
 #book-seat{
   text-align: center;
@@ -240,12 +256,51 @@ li a:hover:not(.active) {
 
 /*--------Footer-------------*/
 footer{
-  margin-top: 20%;
+  margin-top: 10%;
   right: 0;
   bottom: 0;
   left: 0;
   padding: 1rem;
-  background-color: #efefef;
+  /*background-color: #efefef;*/
   text-align: center;
   font-size: smaller;
+}
+
+
+
+
+
+.datagrid table {
+  margin-top: 5%;
+  border-collapse: collapse;
+  text-align: left;
+  width: 90%;
+  }
+.datagrid {
+  overflow: hidden;
+  font: normal 12px/150% Verdana, Arial, Helvetica, sans-serif;
+  overflow: hidden;
+  text-align: center;
+  margin-right: 5%;
+  margin-left: 15%;
+}
+.datagrid table td,
+.datagrid table th {
+  padding: 9px 12px;
+}
+.datagrid table thead th {
+
+}
+.datagrid table thead th:first-child {
+  border: none;
+}
+.datagrid table tbody td {
+  font-size: 13px;
+  font-weight: normal;
+}
+.datagrid table tbody td:first-child {
+  border-left: none;
+}
+.datagrid table tbody tr:last-child td {
+  border-bottom: none;
 }
