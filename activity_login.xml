@@ -5,35 +5,61 @@
     android:id="@+id/activity_login"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/colorBackground"
     android:paddingBottom="@dimen/activity_vertical_margin"
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.library_app_test.Login">
-
-    <TextView
-        android:text="Output_Text"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:id="@+id/Output_Text"
-        android:textAppearance="@style/TextAppearance.AppCompat.Display2"
-        android:textAlignment="center"
-        android:textSize="50dp"
-        android:layout_alignParentTop="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="74dp" />
+    tools:context="org.example.aprilversion.Login">
 
     <Button
-        android:text="Back"
+        android:id="@+id/Login_Button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginBottom="11dp"
-        android:id="@+id/button6"
-        android:contentDescription="Back"
-        android:textAppearance="@style/TextAppearance.AppCompat.Button"
-        android:visibility="visible"
-        android:onClick="back"/>
+        android:background="@color/colorButton"
+        android:text="@string/loginButton"
+        android:textColor="@color/textWhite"
+        android:onClick="login"/>
+
+    <EditText
+        android:id="@+id/Password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="34dp"
+        android:ems="10"
+        android:hint="@string/PasswordInput"
+        android:inputType="textPassword"
+        android:textAlignment="center"
+        android:textColorHint="@color/textWhite"
+        android:layout_above="@+id/Login_Button"
+        android:layout_alignStart="@+id/Username" />
+
+    <EditText
+        android:id="@+id/Username"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/UsernameInput"
+        android:inputType="textPersonName"
+        android:selectAllOnFocus="true"
+        android:singleLine="true"
+        android:textAlignment="center"
+        android:textColorHint="@color/textWhite"
+        android:layout_marginBottom="27dp"
+        android:layout_above="@+id/Password"
+        android:layout_centerHorizontal="true" />
+
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:srcCompat="@mipmap/uoplogo"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/imageView3"
+        android:layout_alignParentEnd="true"
+        android:layout_above="@+id/Username"
+        android:paddingBottom="40sp" />
 
 </RelativeLayout>
