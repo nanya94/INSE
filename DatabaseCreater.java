@@ -10,11 +10,11 @@ import static android.provider.BaseColumns._ID;
 /**
  * @author UP785470
  *
+ * This class creates the database when it is created.
  */
-
 public class DatabaseCreater extends SQLiteOpenHelper {
     private static final String DATABASE_NAME = "library.db";
-    private static final int DATABASE_VERSION = 3;
+    private static final int DATABASE_VERSION = 5;
 
     public DatabaseCreater(Context ctx){
         super(ctx, DATABASE_NAME, null, DATABASE_VERSION);
@@ -48,7 +48,7 @@ public class DatabaseCreater extends SQLiteOpenHelper {
     public String createStudentTable(){
         return ("CREATE TABLE IF NOT EXISTS " + STUDENT + " ("
                 + STD_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
-                + STUDENT_NUM + " TEXT NOT NULL UNIQUE, "
+                + STUDENT_NUM + " TEXT NOT NULL, "
                 + FNAME + " TEXT NOT NULL, "
                 + LNAME + " TEXT NOT NULL, "
                 + PASSWORD + " TEXT NOT NULL);");
@@ -73,9 +73,9 @@ public class DatabaseCreater extends SQLiteOpenHelper {
         return ("CREATE TABLE IF NOT EXISTS " + TIME_SLOT + " ("
                 + TIME_SLOT_ID + " INTEGER PRIMARY KEY AUTOINCREMENT, "
                 + TIME + " TEXT NOT NULL, "
-                + DAY + "TEXT NOT NULL, "
-                + AVAILABLE + " BOOLEAN NOT NULL,"
-                + SEAT_NUM + " INTEGER " +
+                + DAY + " TEXT NOT NULL, "
+                + AVAILABLE + " INTEGER NOT NULL, "
+                + SEAT_NUM + " INTEGER," +
                 " FOREIGN KEY (" + SEAT_NUM + ") REFERENCES " + SEAT + " (" + SEAT_ID + " ));");
     }
 
@@ -86,10 +86,10 @@ public class DatabaseCreater extends SQLiteOpenHelper {
     public String createBookingTable(){
         return ("CREATE TABLE IF NOT EXISTS " + BOOKING + " ("
                 + BOOKING_REF + " INTEGER PRIMARY KEY AUTOINCREMENT,"
-                + STUDENT_NUM + "TEXT,"
-                + TIME_SLOT_ID + "INTEGER"
-                + " FOREIGN KEY (" + STUDENT_NUM + ") REFERENCES " + STUDENT + "(" + STUDENT_NUM + "), "
-                + " FOREIGN KEY (" + TIME_SLOT_ID + ") REFERENCES " + TIME_SLOT + "(" + TIME_SLOT_ID + ");");
+                + STUDENT_NUMBER + " TEXT,"
+                + TIME_SLOT_ID + " INTEGER,"
+                + " FOREIGN KEY (" + STUDENT_NUMBER + ") REFERENCES " + STUDENT + "(" + STUDENT_NUM + "),"
+                + " FOREIGN KEY (" + TIME_SLOT_ID + ") REFERENCES " + TIME_SLOT + "(" + TIME_SLOT_ID + "));");
     }
 
     /**
@@ -97,11 +97,11 @@ public class DatabaseCreater extends SQLiteOpenHelper {
      * @param db
      */
     public void insertStudents(SQLiteDatabase db){
-        db.execSQL("INSERT INTO " + STUDENT + " (" + STUDENT_NUM +"," + FNAME + "," + LNAME+"," +PASSWORD +") VALUES ('UP785470', 'Stephen', 'Carlin', 'Password123');");
-        db.execSQL("INSERT INTO " + STUDENT + " (" + STUDENT_NUM +"," + FNAME + "," + LNAME+"," +PASSWORD +") VALUES ('UP700001', 'John', 'Doe', 'Password123');");
-        db.execSQL("INSERT INTO " + STUDENT + " (" + STUDENT_NUM +"," + FNAME + "," + LNAME+"," +PASSWORD +") VALUES ('UP700002', 'Jane', 'Doe', 'Password123');");
-        db.execSQL("INSERT INTO " + STUDENT + " (" + STUDENT_NUM +"," + FNAME + "," + LNAME+"," +PASSWORD +") VALUES ('UP999999', 'Tony', 'Hawk', 'ProSkater');");
-        db.execSQL("INSERT INTO " + STUDENT + " (" + STUDENT_NUM +"," + FNAME + "," + LNAME+"," +PASSWORD +") VALUES ('UP771744', 'Sara', 'Kotusiewicz', 'Password123');");
+        db.execSQL("INSERT INTO " + STUDENT + " (" + STUDENT_NUM + "," + FNAME + "," + LNAME + "," + PASSWORD + ") VALUES ('UP785470', 'Stephen', 'Carlin', 'Password123')");
+        db.execSQL("INSERT INTO " + STUDENT + " (" + STUDENT_NUM + "," + FNAME + "," + LNAME + "," + PASSWORD + ") VALUES ('UP700001', 'John', 'Doe', 'Password123')");
+        db.execSQL("INSERT INTO " + STUDENT + " (" + STUDENT_NUM + "," + FNAME + "," + LNAME + "," + PASSWORD + ") VALUES ('UP700002', 'Jane', 'Doe', 'Password123')");
+        db.execSQL("INSERT INTO " + STUDENT + " (" + STUDENT_NUM + "," + FNAME + "," + LNAME + "," + PASSWORD + ") VALUES ('UP999999', 'Tony', 'Hawk', 'ProSkater')");
+        db.execSQL("INSERT INTO " + STUDENT + " (" + STUDENT_NUM + "," + FNAME + "," + LNAME + "," + PASSWORD + ") VALUES ('UP771744', 'Sara', 'Kotusiewicz', 'Password123')");
 
 
     }
@@ -194,7 +194,7 @@ public class DatabaseCreater extends SQLiteOpenHelper {
      * @param db
      */
     public void insertBookings(SQLiteDatabase db){
-        db.execSQL("INSERT INTO " + BOOKING + "( " + STUDENT_NUM + "," + TIME_SLOT_ID + ") VALUES (UP785470, 1);");
+        db.execSQL("INSERT INTO " + BOOKING + "(" + STUDENT_NUMBER + "," + TIME_SLOT_ID + ") VALUES ('UP785470', 1);");
     }
 
 
