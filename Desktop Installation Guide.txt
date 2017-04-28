@@ -1,0 +1,4 @@
+Desktop Installation:
+1. Download the entire folder
+2.Go to Library/bin/release
+3. Run Library System.exe
