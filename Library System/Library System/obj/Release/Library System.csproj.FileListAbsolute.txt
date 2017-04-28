@@ -1,0 +1,10 @@
+C:\Users\RCP\documents\visual studio 2015\Projects\Library System\Library System\bin\Release\Library System.exe.config
+C:\Users\RCP\documents\visual studio 2015\Projects\Library System\Library System\bin\Release\Library System.exe
+C:\Users\RCP\documents\visual studio 2015\Projects\Library System\Library System\bin\Release\Library System.pdb
+C:\Users\RCP\documents\visual studio 2015\Projects\Library System\Library System\obj\Release\Library_System.LibrarySystem.resources
+C:\Users\RCP\documents\visual studio 2015\Projects\Library System\Library System\obj\Release\Library_System.Properties.Resources.resources
+C:\Users\RCP\documents\visual studio 2015\Projects\Library System\Library System\obj\Release\Library System.csproj.GenerateResource.Cache
+C:\Users\RCP\documents\visual studio 2015\Projects\Library System\Library System\obj\Release\Library System.exe
+C:\Users\RCP\documents\visual studio 2015\Projects\Library System\Library System\obj\Release\Library System.pdb
+C:\Users\RCP\documents\visual studio 2015\Projects\Library System\Library System\obj\Release\Library System.csprojResolveAssemblyReference.cache
+C:\Users\RCP\documents\visual studio 2015\Projects\Library System\Library System\bin\Release\Seating.accdb
